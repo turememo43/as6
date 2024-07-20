@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("oncreate username: " + username);
 
         makeMusicians();
+        makeSimpsons();
     }
 
     public void makeMusicians(){
@@ -35,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(james.instrument);
         System.out.println(james.age);
         System.out.println(james.name);
+
+    }
+
+    public void makeSimpsons(){
+
+        Simpsons homer = new Simpsons("Homer", 50, "Nuclear");
+
+        System.out.println(homer.getAge());
+
+        homer.setAge(55);
+        System.out.println(homer.getAge());
+
+        homer.setName("Homer Simpson");
+        System.out.println(homer.getName());
 
     }
 
@@ -78,6 +93,12 @@ public class MainActivity extends AppCompatActivity {
         username = "lazarus";
 
         System.out.println("onstop username: " + username);
+
+
+
+
+
+
 
     }
 
